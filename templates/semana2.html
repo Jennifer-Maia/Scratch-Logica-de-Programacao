@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% block title %}Semana 2{% endblock %}
+{% block content %}
+<h1>Semana 2: Movimentação e Animação</h1>
+<div style="background-color: #ffffff; padding: 20px; border-radius: 10px; color: #000000;">
+    <h2 style="color: #800080;">Objetivo da Semana</h2>
+    <p>Ensinar aos alunos os conceitos de movimentação e animação no Scratch. Ao final da semana, os alunos devem ser capazes de criar personagens que se movimentam e animam utilizando blocos de código do Scratch.</p>
+
+    <h2 style="color: #800080;">Preparação do Professor</h2>
+    <ul>
+        <li>Familiarize-se com a interface do Scratch e os blocos de movimentação e animação.</li>
+        <li>Crie uma conta no Scratch (<a href="https://scratch.mit.edu" target="_blank">https://scratch.mit.edu</a>) se ainda não tiver uma.</li>
+        <li>Prepare exemplos de projetos simples que demonstrem movimentação e animação.</li>
+        <li>Tenha um projetor ou uma tela grande para demonstrar os passos aos alunos.</li>
+    </ul>
+
+    <h2 style="color: #800080;">Passo a Passo da Aula</h2>
+
+    <h3 style="color: #800080;">Introdução (10 minutos)</h3>
+    <ol>
+        <li><strong>Revisão da Semana Anterior</strong>:
+            <p>Revise rapidamente o que foi aprendido na semana 1 sobre a interface do Scratch e como criar um projeto simples. Pergunte aos alunos se eles têm alguma dúvida sobre o que foi ensinado anteriormente.</p>
+        </li>
+        <li><strong>Apresentação do Tema da Semana</strong>:
+            <p>Explique que esta semana será focada em como fazer os personagens (sprites) se movimentarem e animarem.</p>
+        </li>
+    </ol>
+
+    <h3 style="color: #800080;">Demonstração (30 minutos)</h3>
+    <ol>
+        <li><strong>Acesso ao Scratch</strong>:
+            <p>Instrua os alunos a acessarem o Scratch (<a href="https://scratch.mit.edu" target="_blank">https://scratch.mit.edu</a>) e a fazerem login com suas contas. Se necessário, ajude os alunos a criarem uma conta.</p>
+        </li>
+        <li><strong>Criando um Novo Projeto</strong>:
+            <p>Mostre como criar um novo projeto clicando em "Criar" no menu superior. Explique os diferentes blocos na paleta de blocos e como arrastá-los para a área de scripts.</p>
+        </li>
+        <li><strong>Movimentação Simples</strong>:
+            <p>Demonstre como usar os blocos de movimentação, como “mova 10 passos” e “vá para x: [ ] y: [ ]”. Crie um exemplo simples onde o sprite se move para frente e para trás.</p>
+        </li>
+        <li><strong>Introdução à Animação</strong>:
+            <p>Mostre como mudar fantasias (costumes) para animar um sprite. Use o bloco “próxima fantasia” e explique como ele pode ser usado em conjunto com blocos de controle, como “sempre”.</p>
+        </li>
+    </ol>
+
+    <h3 style="color: #800080;">Atividade Prática (30 minutos)</h3>
+    <ol>
+        <li><strong>Desafio de Movimentação</strong>:
+            <p>Peça aos alunos para criar um projeto onde o sprite se move para a direita quando a tecla de seta direita é pressionada, e para a esquerda quando a tecla de seta esquerda é pressionada. Dê tempo para que os alunos experimentem e ajudem aqueles que tiverem dificuldades.</p>
+        </li>
+        <li><strong>Desafio de Animação</strong>:
+            <p>Peça aos alunos para adicionar mais fantasias ao sprite e criar uma animação simples (como um personagem andando). Use o bloco “espere [ ] segundos” para ajustar a velocidade da animação.</p>
+        </li>
+    </ol>
+
+    <h3 style="color: #800080;">Revisão e Feedback (20 minutos)</h3>
+    <ol>
+        <li><strong>Revisão dos Projetos</strong>:
+            <p>Peça a alguns alunos para apresentarem seus projetos à turma. Destaque boas práticas e ideias criativas.</p>
+        </li>
+        <li><strong>Feedback</strong>:
+            <p>Pergunte aos alunos o que acharam mais fácil e mais difícil. Anote as dificuldades comuns para abordá-las em futuras aulas.</p>
+        </li>
+    </ol>
+
+    <h2 style="color: #800080;">Dicas para o Professor</h2>
+    <ul>
+        <li><strong>Encoraje a Criatividade</strong>: Deixe os alunos experimentarem diferentes ideias e animações.</li>
+        <li><strong>Seja Paciente</strong>: Alguns alunos podem precisar de mais tempo para entender os conceitos.</li>
+        <li><strong>Use Recursos Visuais</strong>: Utilize o projetor para mostrar exemplos e explicar os conceitos claramente.</li>
+        <li><strong>Ofereça Ajuda Individual</strong>: Circule pela sala e ajude individualmente os alunos que estão tendo dificuldades.</li>
+    </ul>
+
+    <h2 style="color: #800080;">Recursos Adicionais</h2>
+    <ul>
+        <li><strong>Tutoriais do Scratch</strong>: Utilize tutoriais disponíveis no site do Scratch para ajudar a explicar conceitos.</li>
+        <li><strong>Fórum de Discussão</strong>: Crie um espaço online onde os alunos possam postar dúvidas e compartilhar seus projetos.</li>
+    </ul>
+
+    <h2 style="color: #800080;">Exemplo de Projeto</h2>
+    <pre>
+        1. Acesse o Scratch e crie um novo projeto.
+        2. Selecione um sprite (pode ser o gato do Scratch ou outro de sua escolha).
+        3. Adicione duas fantasias ao sprite (por exemplo, Gato1-a e Gato1-b).
+        4. Arraste o bloco "quando tecla [espaço] pressionada" para a área de scripts.
+        5. Adicione o bloco "próxima fantasia".
+        6. Adicione o bloco "mova 10 passos".
+        7. Combine com o bloco "espere 0.1 segundos" para controlar a velocidade da animação.
+    </pre>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="{% block body_class %}{% endblock %}">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"> Lógica de Programação com Scratch</li>
+                <li><a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">Página Inicial</a></li>
+                <li><a href="{{ url_for('programacao') }}" class="{% if request.endpoint == 'programacao' %}active{% endif %}">Cronograma</a></li>
+                {% if 'user' in session %}
+                    {% if session['type'] == 'professor' %}
+                        <li><a href="{{ url_for('professor') }}" class="{% if request.endpoint == 'professor' %}active{% endif %}">Área do Professor</a></li>
+                        <li><a href="{{ url_for('resultados') }}" class="{% if request.endpoint == 'resultados' %}active{% endif %}">Resultados</a></li>
+                    {% elif session['type'] == 'aluno' %}
+                        <li><a href="{{ url_for('aluno') }}" class="{% if request.endpoint == 'aluno' %}active{% endif %}">Área do Aluno</a></li>
+                        <li><a href="{{ url_for('feedback') }}" class="{% if request.endpoint == 'feedback' %}active{% endif %}">Feedback</a></li>
+                    {% endif %}
+                    <li><a href="{{ url_for('logout') }}" class="{% if request.endpoint == 'logout' %}active{% endif %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{{ url_for('login') }}" class="{% if request.endpoint == 'login' %}active{% endif %}">Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

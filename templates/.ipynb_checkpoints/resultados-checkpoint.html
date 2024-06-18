@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Resultados dos Feedbacks{% endblock %}
+
+{% block content %}
+<div class="resultados-container">
+    <h2>Resultados dos Feedbacks</h2>
+
+    {% if feedbacks %}
+    <ul>
+        {% for feedback in feedbacks %}
+        <li>
+            <strong>Nome:</strong> {{ feedback.nome }}
+            <ul>
+                <li><strong>Idade:</strong> {{ feedback.idade }}</li>
+                <li><strong>Dúvidas foram Tiradas:</strong> {{ feedback.didatica }}</li>
+                <li><strong>Faria mais Aulas de Programação:</strong> {{ feedback.mais_aulas }}</li>
+                <li><strong>O que achou do Conteúdo:</strong> {{ feedback.conteudo }}</li>
+                <li><strong>Conseguiu realizar os exercícios propostos:</strong> {{ feedback.exercicios }}</li>
+                <li><strong>Principais dificuldades encontradas nas aulas:</strong> {{ feedback.dificuldades }}</li>
+                <li><strong>O que achou mais divertido:</strong> {{ feedback.divertido }}</li>
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Gráfico de Barras para Mais Aulas -->
+    <div style="width: 50%;">
+        <canvas id="maisAulasChart"></canvas>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ctx = document.getElementById('maisAulasChart').getContext('2d');
+            var simCount = {{ feedbacks | selectattr('mais_aulas', 'equalto', 'sim') | list | length }};
+            var naoCount = {{ feedbacks | selectattr('mais_aulas', 'equalto', 'nao') | list | length }};
+
+            var maisAulasChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Sim', 'Não'],
+                    datasets: [{
+                        label: 'Mais Aulas Desejadas',
+                        data: [simCount, naoCount],
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(255, 99, 132, 0.5)'
+                        ],
+                        borderColor: [
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 99, 132, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+    {% else %}
+    <p>Nenhum feedback encontrado.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Professores{% endblock %}
+
+{% block content %}
+<h1>Bem-vindo a Área do Professor</h1>
+<p>Aqui você encontrará todos os recursos e materiais necessários para ministrar as aulas.</p>
+<div class="card-container">
+    <div class="card">
+        <h3>Semana 1</h3>
+        <p>Introdução ao Scratch</p>
+        <a href="{{ url_for('semana', numero=1) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 2</h3>
+        <p>Movimentação e Animação</p>
+        <a href="{{ url_for('semana', numero=2) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 3</h3>
+        <p>Controle de Fluxo</p>
+        <a href="{{ url_for('semana', numero=3) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 4</h3>
+        <p>Trabalhando com Variáveis</p>
+        <a href="{{ url_for('semana', numero=4) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 5</h3>
+        <p>Eventos e Interações</p>
+        <a href="{{ url_for('semana', numero=5) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 6</h3>
+        <p>Funções e Blocos</p>
+        <a href="{{ url_for('semana', numero=6) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 7</h3>
+        <p>Sons e Música</p>
+        <a href="{{ url_for('semana', numero=7) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 8</h3>
+        <p>Sensores e Dados de Entrada</p>
+        <a href="{{ url_for('semana', numero=8) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 9</h3>
+        <p>Projetos Colaborativos</p>
+        <a href="{{ url_for('semana', numero=9) }}">Ver mais</a>
+    </div>
+    <div class="card">
+        <h3>Semana 10</h3>
+        <p>Revisão e Trabalho Final</p>
+        <a href="{{ url_for('semana', numero=10) }}">Ver mais</a>
+    </div>
+</div>
+{% endblock %}
+

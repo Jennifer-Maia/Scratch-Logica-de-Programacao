@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Cronograma{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Cronograma do Curso</h1>
+    <p> Descubra o emocionante mundo da programação através da nossa página de cronogramas. 
+    <br> Aqui, apresentamos um cronograma detalhado com tópicos semanais e atividades envolventes para ensinar crianças a criar e animar seus próprios jogos, histórias e animações usando Scratch. 
+    <br> Além disso, conheça nossa programação diária, proporcionando uma visão clara de como cada dia de aprendizado é estruturado, desde atividades iniciais até a conclusão e revisão do conteúdo. Prepare-se para uma jornada divertida e educativa onde cada criança se torna um criador digital com habilidades de programação!</p>
+    <section id="cronograma">
+        <h2>Cronograma de Tópicos e Atividades</h2>
+        <table class="cronograma-table">
+            <thead>
+                <tr>
+                    <th>Semana</th>
+                    <th>Tópico</th>
+                    <th>Atividades</th>
+                    <th>Duração (horas)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Introdução ao Scratch</td>
+                    <td>Interface, blocos, personagens, história simples</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Movimentação e Animação</td>
+                    <td>Movimentos, animações, exercício prático</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Controle de Fluxo</td>
+                    <td>Loops, condicionais, exercício prático</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Trabalhando com Variáveis</td>
+                    <td>Criação e uso de variáveis, jogo de pontos</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Eventos e Interações</td>
+                    <td>Eventos básicos, comunicação entre personagens</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Funções e Blocos</td>
+                    <td>Criar blocos personalizados, exercício prático</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Sons e Música</td>
+                    <td>Adicionar e manipular sons, projeto musical</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Sensores e Dados de Entrada</td>
+                    <td>Uso de sensores, entrada de dados pelo usuário</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Projetos Colaborativos</td>
+                    <td>Trabalho em grupo, compartilhar trabalhos</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Revisão e Trabalho Final</td>
+                    <td>Revisão geral, finalização de projetos, trabalho final</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="programacao-diaria">
+        <h2>Programação Diária</h2>
+        <ul class="programacao-diaria-list">
+            <li>
+                <strong>9h – 9h10</strong>: Atividades iniciais e Introdução do Dia
+            </li>
+            <li>
+                <strong>9h10 – 9h50</strong>: Aula teórica sobre o tema do dia
+            </li>
+            <li>
+                <strong>9h50 – 10h30</strong>: Exercícios práticos no Scratch
+            </li>
+            <li>
+                <strong>10h30 – 10h50</strong>: Discussão e resolução de dúvidas
+            </li>
+            <li>
+                <strong>10h50 – 11h</strong>: Revisão e resumo do dia/Saída dos Alunos
+            </li>
+        </ul>
+    </section>
+</div>
+{% endblock %}

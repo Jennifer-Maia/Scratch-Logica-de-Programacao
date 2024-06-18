@@ -1,0 +1,422 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #01080E, #131B29); /* Degradê azul e roxo */
+    color: #f2f2f2;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+
+/* Cor dos títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: #2BDEFD; /* Cor dos títulos */
+}
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #131B29, #131B29); /* Degradê azul e roxo */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinha o menu à direita */
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li.logo {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o logo à esquerda */
+}
+
+nav ul li.logo img {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Cor padrão do texto */
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #ff6600; /* Cor do texto do menu selecionado ou ao passar o mouse */
+}
+
+main {
+    padding-top: 120px; /* Ajusta o espaçamento para baixo do cabeçalho fixo */
+    width: 100%;
+    max-width: 1200px; /* Define uma largura máxima para o conteúdo principal */
+    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
+    padding-left: 20px; /* Adiciona espaçamento à esquerda */
+    padding-right: 20px; /* Adiciona espaçamento à direita */
+}
+
+main h1, main p {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Rodapé */
+/*footer {
+    background: linear-gradient(135deg, #01080E, #131B29); /* Degradê azul e roxo
+    padding: 5px 0;
+    text-align: center;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}*/
+
+/* Estilos para os cartões */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Estilos para a página de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Altura total da viewport menos a altura do cabeçalho */
+    position: relative;
+    z-index: 1; /* Garante que o formulário fique acima do fundo semi-transparente */
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    margin-top: -60px; /* Centraliza verticalmente o formulário */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #6a11cb; /* Cor do botão */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #2575fc; /* Cor do botão ao passar o mouse */
+}
+
+.login-form .error {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+.cronograma-table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+.cronograma-table th, .cronograma-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.programacao-diaria-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.programacao-diaria-list li {
+    margin-bottom: 10px;
+}
+
+.programacao-diaria-list strong {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+/* Estilos para botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6e8efb; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #a777e3; /* Cor de fundo do botão ao passar o mouse */
+    color: #000; /* Cor do texto do botão ao passar o mouse */
+}
+
+/* Estilos para botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6e8efb; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #a777e3; /* Cor de fundo do botão ao passar o mouse */
+    color: #000; /* Cor do texto do botão ao passar o mouse */
+}
+
+/* Estilos específicos para a página inicial */
+#inicio {
+    background-color: linear-gradient(135deg, #01080E, #131B29); /* Fundo branco semi-transparente */
+    padding: 0px 0;
+}
+
+#inicio .container {
+    max-width: 1200px;
+    margin: 0 0px;
+    padding: 0 0px;
+}
+
+#inicio .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#inicio .text {
+    flex: 1;
+    margin-right: 0px;
+}
+
+#inicio .images {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+#inicio h1 {
+    font-size: 36px;
+    color: #2BDEFD; /* Cor do título */
+    text-align: left; /* Alinhamento à esquerda */
+    margin-bottom: 0px;
+}
+
+#inicio p {
+    font-size: 18px;
+    color: #fff; /* Cor do texto */
+    text-align: left; /* Alinhamento à esquerda */
+    max-width: 800px; /* Limita a largura do parágrafo */
+}
+
+#inicio .images img {
+    width: 100%; /* Ocupa toda a largura da coluna */
+    height: auto; /* Altura automática */
+    margin-bottom: 20px; /* Espaçamento entre as imagens */
+}
+
+#inicio .btn {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    padding: 10px 20px;
+    background-color: #6e8efb; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#inicio .btn:hover {
+    background-color: #a777e3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo específico para a mensagem no formulário de login */
+.login-form p {
+    color: #000; /* Define a cor do texto como preto */
+    font-size: 16px; /* Ajusta o tamanho da fonte, se necessário */
+    margin-bottom: 20px; /* Espaçamento abaixo da mensagem */
+    text-align: center; /* Centraliza o texto, se necessário */
+}
+
+.resultados-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.resultado-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    color: #000;
+}
+
+.resultado-item:last-child {
+    border-bottom: none;
+    color: #000;
+}
+
+.resultado-item h3 {
+    color: #2BDEFD;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.resultado-item p {
+    font-size: 16px;
+    color: #000;
+    margin-top: 5px;
+}
+
+.feedback-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+    color: #2BDEFD;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="number"],
+.feedback-form textarea,
+.feedback-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.feedback-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23333' d='M8 11L0 3h16zm0-2.083L12.083 3H3.917zM0 13l8 8 8-8zm16 0H0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #6a11cb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #2575fc;
+}
+
+/* Estilos específicos para o resultado de cada pergunta */
+.resultado-item p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Ajustes de margem e espaçamento */
+.resultado-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+

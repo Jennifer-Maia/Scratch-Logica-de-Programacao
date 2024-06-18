@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Feedback{% endblock %}
+
+{% block content %}
+<div class="feedback-container">
+    <form class="feedback-form" method="POST" action="{{ url_for('feedback') }}">
+        <h2>Formulário de Feedback</h2>
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+
+        <label for="didatica">Sobre a didática da professora, suas dúvidas foram tiradas?</label>
+        <select id="didatica" name="didatica" required>
+            <option value="" selected disabled>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="mais_aulas">Sobre linguagem de programação, você gostaria de fazer mais aulas sobre o tema?</label>
+        <select id="mais_aulas" name="mais_aulas" required>
+            <option value="" selected disabled>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="conteudo">O que achou do conteúdo?</label>
+        <select id="conteudo" name="conteudo" required>
+            <option value="" selected disabled>Selecione</option>
+            <option value="bom">Bom</option>
+            <option value="ruim">Ruim</option>
+            <option value="excelente">Excelente</option>
+        </select>
+
+        <label for="exercicios">Conseguiu realizar os exercícios propostos pela professora?</label>
+        <select id="exercicios" name="exercicios" required>
+            <option value="" selected disabled>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="dificuldades">Quais foram as maiores dificuldades encontradas nas aulas?</label>
+        <textarea id="dificuldades" name="dificuldades" rows="4" required></textarea>
+        
+        <label for="divertido">O que achou mais divertido nas aulas?</label>
+        <textarea id="divertido" name="divertido" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+{% endblock %}
