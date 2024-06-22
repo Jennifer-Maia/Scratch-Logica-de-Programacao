@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% block title %}Semana 3{% endblock %}
+{% block content %}
+<h1>Semana 3: Controle de Fluxo</h1>
+<div style="background-color: #ffffff; padding: 20px; border-radius: 10px; color: #000000;">
+<h2 style="color: #800080;">Objetivo</h2>
+<p>Ensinar os alunos a utilizar estruturas de controle de fluxo como loops e condicionais no Scratch para criar programas mais complexos e dinâmicos.</p>
+
+<h2 style="color: #800080;">Atividades</h2>
+<h3 style="color: #800080;">1. Introdução aos Conceitos de Controle de Fluxo (20 minutos)</h3>
+<ol>
+    <li>Introduzir o conceito de controle de fluxo, explicando que são comandos que controlam a ordem em que as instruções de um programa são executadas.</li>
+    <li>Diferenciar entre comandos sequenciais, condicionais e de repetição.</li>
+    <li>Discussão: 
+        <ul>
+            <li>Por que o controle de fluxo é importante na programação?</li>
+            <li>Exemplos do mundo real onde decisões e repetições são necessárias (ex.: semáforos, jogos de tabuleiro).</li>
+        </ul>
+    </li>
+</ol>
+
+<h3 style="color: #800080;">2. Loops (40 minutos)</h3>
+<ol>
+    <li>Introduzir os conceitos de loops (repetições), explicando as diferenças entre loops determinados (ex.: "repita 10 vezes") e loops indeterminados (ex.: "repita até que").</li>
+    <li>Tipos de loops no Scratch: "repita" e "para sempre".</li>
+    <li><b>Exemplo 1: Loop Determinado</b>
+        <ul>
+            <li>Criar um sprite que anda para frente e para trás 10 vezes.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite e posicioná-lo no palco.</li>
+                    <li>Adicionar um bloco "quando a bandeira verde for clicada".</li>
+                    <li>Adicionar um bloco "repita 10" e dentro dele colocar blocos de movimento ("mova 10 passos" e "vire 180 graus").</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li><b>Exemplo 2: Loop Indeterminado</b>
+        <ul>
+            <li>Criar um sprite que segue o cursor do mouse para sempre.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite.</li>
+                    <li>Adicionar um bloco "quando a bandeira verde for clicada".</li>
+                    <li>Adicionar um bloco "para sempre" e dentro dele colocar o bloco "aponte na direção do ponteiro do mouse" e "mova 10 passos".</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3 style="color: #800080;">3. Condicionais (40 minutos)</h3>
+<ol>
+    <li>Introduzir o conceito de condicionais, explicando como são usados para tomar decisões no código.</li>
+    <li>Estruturas condicionais no Scratch: "se... então" e "se... então... senão".</li>
+    <li><b>Exemplo 1: Condicional Simples</b>
+        <ul>
+            <li>Criar um sprite que muda de cor se tocar na borda do palco.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite.</li>
+                    <li>Adicionar um bloco "quando a bandeira verde for clicada".</li>
+                    <li>Adicionar um bloco "para sempre".</li>
+                    <li>Dentro do loop, adicionar um bloco "se... então" com a condição "tocando na borda?".</li>
+                    <li>Dentro do bloco condicional, adicionar o bloco "mude cor efeito por 25".</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li><b>Exemplo 2: Condicional Composta</b>
+        <ul>
+            <li>Criar um sprite que diz "Olá" se a tecla espaço for pressionada, caso contrário, diz "Adeus".</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite.</li>
+                    <li>Adicionar um bloco "quando a bandeira verde for clicada".</li>
+                    <li>Adicionar um bloco "para sempre".</li>
+                    <li>Dentro do loop, adicionar um bloco "se... então... senão" com a condição "tecla espaço pressionada?".</li>
+                    <li>Dentro do bloco "então", adicionar o bloco "diga Olá por 2 segundos".</li>
+                    <li>Dentro do bloco "senão", adicionar o bloco "diga Adeus por 2 segundos".</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3 style="color: #800080;">4. Exercícios Práticos (20 minutos)</h3>
+<ol>
+    <li><b>Exercício 1: Criar um Jogo Simples</b>
+        <ul>
+            <li>Criar um jogo onde um personagem deve coletar objetos, utilizando loops e condicionais.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite para o personagem e vários sprites para os objetos.</li>
+                    <li>Utilizar um loop para movimentar os objetos no palco.</li>
+                    <li>Utilizar condicionais para detectar colisões entre o personagem e os objetos, incrementando a pontuação.</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li><b>Exercício 2: Desafio de Movimento</b>
+        <ul>
+            <li>Criar um sprite que se move em um padrão específico (ex.: quadrado) utilizando loops e condicionais.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite.</li>
+                    <li>Utilizar um loop determinado para criar o movimento em quadrado.</li>
+                    <li>Utilizar condicionais para detectar bordas e mudar a direção do movimento.</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h2 style="color: #800080;">Materiais Necessários</h2>
+<ul>
+    <li>Computadores com acesso à internet e ao site do Scratch.</li>
+    <li>Projetor para demonstração.</li>
+</ul>
+
+<h2 style="color: #800080;">Duração Total</h2>
+<p>2 horas</p>
+</div>
+{% endblock %}

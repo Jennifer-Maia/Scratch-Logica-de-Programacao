@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #01080E, #131B29); /* Degradê azul e roxo */
+    background: linear-gradient(135deg, #01080E, #131B29); 
     color: #f2f2f2;
     min-height: 100vh;
     position: relative;
@@ -16,17 +16,17 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    z-index: -1; /* Coloca o fundo atrás do conteúdo */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
 }
 
 /* Cor dos títulos */
 h1, h2, h3, h4, h5, h6 {
-    color: #2BDEFD; /* Cor dos títulos */
+    color: #2BDEFD;
 }
 /* Cabeçalho */
 header {
-    background: linear-gradient(135deg, #131B29, #131B29); /* Degradê azul e roxo */
+    background: linear-gradient(135deg, #131B29, #131B29); 
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -40,7 +40,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* Alinha o menu à direita */
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -52,20 +52,20 @@ nav ul li.logo {
     flex-grow: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alinha o logo à esquerda */
+    justify-content: flex-start; 
 }
 
 nav ul li.logo img {
-    width: 40px; /* Ajuste o tamanho conforme necessário */
+    width: 40px;
     height: auto;
     margin-right: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Cor padrão do texto */
+    color: #fff; 
     font-weight: bold;
-    transition: color 0.3s; /* Transição suave para a mudança de cor */
+    transition: color 0.3s; 
 }
 
 nav ul li a.active, nav ul li a:hover {
@@ -75,10 +75,10 @@ nav ul li a.active, nav ul li a:hover {
 main {
     padding-top: 120px; /* Ajusta o espaçamento para baixo do cabeçalho fixo */
     width: 100%;
-    max-width: 1200px; /* Define uma largura máxima para o conteúdo principal */
-    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
-    padding-left: 20px; /* Adiciona espaçamento à esquerda */
-    padding-right: 20px; /* Adiciona espaçamento à direita */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding-left: 20px; 
+    padding-right: 20px; 
 }
 
 main h1, main p {
@@ -272,14 +272,14 @@ main h1, main p {
 
 #inicio h1 {
     font-size: 36px;
-    color: #2BDEFD; /* Cor do título */
+    color: #2BDEFD;
     text-align: left; /* Alinhamento à esquerda */
     margin-bottom: 0px;
 }
 
 #inicio p {
     font-size: 18px;
-    color: #fff; /* Cor do texto */
+    color: #fff; 
     text-align: left; /* Alinhamento à esquerda */
     max-width: 800px; /* Limita a largura do parágrafo */
 }
@@ -307,10 +307,10 @@ main h1, main p {
 
 /* Estilo específico para a mensagem no formulário de login */
 .login-form p {
-    color: #000; /* Define a cor do texto como preto */
-    font-size: 16px; /* Ajusta o tamanho da fonte, se necessário */
-    margin-bottom: 20px; /* Espaçamento abaixo da mensagem */
-    text-align: center; /* Centraliza o texto, se necessário */
+    color: #000;
+    font-size: 16px; 
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .resultados-container {

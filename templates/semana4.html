@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}Semana 4{% endblock %}
+{% block content %}
+<h1>Semana 4: Trabalhando com Variáveis</h1>
+<div style="background-color: #ffffff; padding: 20px; border-radius: 10px; color: #000000;">
+<h2 style="color: #800080;">Objetivo</h2>
+<p>Ensinar os alunos a criar e usar variáveis no Scratch para armazenar e manipular dados, através de atividades práticas como a criação de um jogo de pontos.</p>
+
+<h2 style="color: #800080;">Atividades</h2>
+<h3 style="color: #800080;">1. Introdução às Variáveis (20 minutos)</h3>
+<ol>
+    <li>Explicação do que são variáveis e sua importância na programação.</li>
+    <li>Discussão sobre os tipos de dados que podem ser armazenados em variáveis (números, texto).</li>
+    <li>Exemplos do mundo real de variáveis (ex.: pontuação em jogos, saldo bancário).</li>
+</ol>
+
+<h3 style="color: #800080;">2. Criação e Uso de Variáveis no Scratch (30 minutos)</h3>
+<ol>
+    <li>Demonstrar como criar uma variável no Scratch:
+        <ol>
+            <li>Clicar em "Variáveis" no painel de blocos.</li>
+            <li>Clicar em "Criar uma variável" e dar um nome significativo (ex.: "pontuação").</li>
+        </ol>
+    </li>
+    <li>Mostrar como definir e alterar o valor de uma variável:
+        <ol>
+            <li>Adicionar o bloco "definir [variável] para [valor]" no script.</li>
+            <li>Adicionar o bloco "mudar [variável] por [valor]" no script.</li>
+        </ol>
+    </li>
+    <li>Exemplo Prático:
+        <ul>
+            <li>Criar uma variável "pontuação" que aumenta quando o sprite toca em um objeto específico.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite para o personagem e vários sprites para os objetos.</li>
+                    <li>Adicionar um bloco "quando a bandeira verde for clicada".</li>
+                    <li>Adicionar um bloco "definir [pontuação] para 0".</li>
+                    <li>Adicionar um bloco "para sempre" que contém uma condição "se tocando em [objeto] então".</li>
+                    <li>Dentro da condição, adicionar um bloco "mudar [pontuação] por 1".</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3 style="color: #800080;">3. Jogo de Pontos (40 minutos)</h3>
+<ol>
+    <li>Desenvolver um jogo simples onde os alunos aplicam o uso de variáveis para controlar a pontuação.</li>
+    <li>Passo a passo:
+        <ol>
+            <li>Adicionar um sprite para o jogador e vários sprites para os objetos a serem coletados.</li>
+            <li>Adicionar uma variável "pontuação".</li>
+            <li>Configurar o jogo para iniciar a pontuação em 0.</li>
+            <li>Adicionar lógica para aumentar a pontuação quando o jogador coleta um objeto.</li>
+            <li>Adicionar lógica para finalizar o jogo quando a pontuação atinge um valor específico.</li>
+        </ol>
+    </li>
+</ol>
+
+<h3 style="color: #800080;">4. Discussão e Feedback (30 minutos)</h3>
+<ol>
+    <li>Discutir as dificuldades encontradas pelos alunos durante a atividade.</li>
+    <li>Compartilhar diferentes abordagens e soluções para os problemas.</li>
+    <li>Feedback sobre o que os alunos acharam da atividade e do uso de variáveis.</li>
+</ol>
+
+<h2 style="color: #800080;">Materiais Necessários</h2>
+<ul>
+    <li>Computadores com acesso à internet e ao site do Scratch.</li>
+    <li>Projetor para demonstração.</li>
+</ul>
+
+<h2 style="color: #800080;">Duração Total</h2>
+<p>2 horas</p>
+</div>
+{% endblock %}

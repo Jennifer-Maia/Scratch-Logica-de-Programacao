@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% block title %}Semana 5{% endblock %}
+{% block content %}
+<h1>Semana 5: Eventos e Interações</h1>
+<div style="background-color: #ffffff; padding: 20px; border-radius: 10px; color: #000000;">
+<h2 style="color: #800080;">Objetivo</h2>
+<p>Ensinar os alunos a usar eventos para interações entre personagens e criar animações interativas no Scratch.</p>
+
+<h2 style="color: #800080;">Atividades</h2>
+<h3 style="color: #800080;">1. Introdução aos Eventos (20 minutos)</h3>
+<ol>
+    <li>Explicação do conceito de eventos em programação e sua importância para interações dinâmicas.</li>
+    <li>Exemplos de eventos no mundo real (ex.: pressionar um botão, clicar em um link).</li>
+</ol>
+
+<h3 style="color: #800080;">2. Eventos Básicos no Scratch (30 minutos)</h3>
+<ol>
+    <li>Demonstrar diferentes tipos de eventos no Scratch:
+        <ul>
+            <li>Quando a bandeira verde é clicada.</li>
+            <li>Quando uma tecla específica é pressionada.</li>
+            <li>Quando um sprite é clicado.</li>
+            <li>Transmissão e recepção de mensagens.</li>
+        </ul>
+    </li>
+    <li>Exemplo Prático:
+        <ul>
+            <li>Criar um sprite que se move quando a tecla de seta para a direita é pressionada.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite.</li>
+                    <li>Adicionar um bloco "quando a bandeira verde for clicada".</li>
+                    <li>Adicionar um bloco "para sempre".</li>
+                    <li>Dentro do loop, adicionar um bloco "se tecla [seta para a direita] pressionada então".</li>
+                    <li>Dentro da condição, adicionar o bloco "mova 10 passos".</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3 style="color: #800080;">3. Comunicação entre Personagens (40 minutos)</h3>
+<ol>
+    <li>Demonstrar como os sprites podem se comunicar entre si utilizando mensagens.</li>
+    <li>Exemplo Prático:
+        <ul>
+            <li>Criar dois sprites, onde um envia uma mensagem e o outro reage a ela.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar dois sprites.</li>
+                    <li>No primeiro sprite, adicionar um bloco "quando este sprite for clicado".</li>
+                    <li>Adicionar um bloco "transmita [mensagem1]".</li>
+                    <li>No segundo sprite, adicionar um bloco "quando eu receber [mensagem1]".</li>
+                    <li>Adicionar um bloco "diga Olá por 2 segundos".</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li>Exemplo Prático 2:
+        <ul>
+            <li>Criar uma animação onde um sprite pergunta algo e outro responde.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar dois sprites.</li>
+                    <li>No primeiro sprite, adicionar um bloco "quando a bandeira verde for clicada".</li>
+                    <li>Adicionar um bloco "diga Olá, como você está? por 2 segundos".</li>
+                    <li>Adicionar um bloco "transmita [mensagem2]".</li>
+                    <li>No segundo sprite, adicionar um bloco "quando eu receber [mensagem2]".</li>
+                    <li>Adicionar um bloco "diga Estou bem, obrigado! por 2 segundos".</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h3 style="color: #800080;">4. Exercícios Práticos (30 minutos)</h3>
+<ol>
+    <li><b>Exercício 1: Criação de Jogo Interativo</b>
+        <ul>
+            <li>Desenvolver um jogo onde os personagens interagem através de eventos.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar um sprite para o jogador e vários sprites para os elementos do jogo.</li>
+                    <li>Adicionar lógica para mover o personagem com as teclas de seta.</li>
+                    <li>Adicionar eventos de colisão entre o jogador e os elementos do jogo.</li>
+                    <li>Adicionar pontuação e feedback para o jogador.</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li><b>Exercício 2: Animação Interativa</b>
+        <ul>
+            <li>Criar uma animação onde os personagens interagem através de mensagens.</li>
+            <li>Passo a passo:
+                <ol>
+                    <li>Adicionar dois ou mais sprites.</li>
+                    <li>Adicionar lógica para iniciar a animação com um clique ou uma tecla.</li>
+                    <li>Adicionar mensagens para coordenar as ações dos personagens.</li>
+                    <li>Adicionar diálogos e movimentos baseados nos eventos de mensagem.</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<h2 style="color: #800080;">Materiais Necessários</h2>
+<ul>
+    <li>Computadores com acesso à internet e ao site do Scratch.</li>
+    <li>Projetor para demonstração.</li>
+</ul>
+
+<h2 style="color: #800080;">Duração Total</h2>
+<p>2 horas</p>
+</div>
+{% endblock %}
